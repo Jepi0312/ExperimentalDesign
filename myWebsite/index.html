@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Sontnos Records</title>
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+          
+
+</head>
+<body>
+     <!-- Navbar Section -->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="#home" id="navbar__logo">SONTNOS RECORDS</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+                <ul class="navbar__menu">
+                    <li class="navbar__item">
+                        <a href="#home" class="navbar__links" id="home-page">Home</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#about" class="navbar__links" id="about-page">About</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#services" class="navbar__links" id="services-page">Services</a>
+                    </li>
+                    <li class="navbar__btn">
+                        <a href="#contact" class="button" id="contact-page">Contact</a>
+                    </li>
+                </ul>
+        </div>
+    </nav>
+
+     <!-- Hero Section -->
+     <div class="hero" id="home">
+         <div class="hero__container">
+             <h1 class="hero__heading">Welcome to the <span>Studio</span></h1>
+             <p class="hero__description">The Passion For Music <span> Lives Through You </span></p>
+             <button class="main__btn"><a href="#">Explore</a></button>
+         </div>
+     </div>
+
+     <!-- About Section -->
+     <div class="main" id="about">
+         <div class="main__container">
+             <div class="main__img--container">
+                 <div class="main__img--card"><i class="fas fa-layer-group"></i></div>
+             </div>
+             <div class="main__content">
+                 <h1>What do we do?</h1>
+                 <h2>We Make Music</h2>
+                 <p>Schedule a session to learn more about our services</p>
+                 <button class="main__btn"><a href="#F">Schedule Session</a></button>
+             </div>
+         </div>
+     </div>
+
+     <!-- Services Section -->
+     <div class="services" id="services">
+         <h1>The Work We Have Done</h1>
+         <div class="services__wrapper">
+
+
+             <div class="services__card">
+
+                 <!-- <img src="images/neptune.png"> -->
+                 <h2 id="title">NEPTUNE</h2>
+                 <p id="artist">Produced by Jepi</p>
+
+                 <!--   left part -->
+                 <div class="left">
+                     <!-- song img / left part -->
+                     <img id="track_image">
+                        <div class="volume">
+                             <p id="volume_show">90</p>
+                             <i class="fas fa-volume-up" aria-hidden="true" onclick="mute_sound()" id="volume_icon"></i>
+                             <input type="range" min="0" max="100" value="90" onchange="volume_change()" id="volume">
+
+                                <div class="services__btn">
+                                    <button onclick="justplay()" id="play"><i class="fa fa-play" aria-hidden="true"></i></button>
+                                </div>
+                        </div>
+                 </div>
+
+                 <!-- right part -->
+                 <div class="right">
+                     <div class="duration">
+                         <i class="fas fa-music" aria-hidden="true" id="duration_icon" onclick="reset_song()"></i>
+                        <input type="range" min="0" max="100" value="0" id="duration_slider" on change="change_duration()">
+                     </div>
+                </div>
+
+         </div>
+
+             <div class="services__card">
+                 <!-- <img src="images/New Arrivals.jpg"> -->
+                 <h2>WRATH</h2>
+                 <p>Produced by Jepi</p>
+                 <div class="services__btn"><button>Listen</button></div>
+             </div>
+
+             <div class="services__card">
+                 <h2>FLÂNEUR</h2>
+                 <p>Produced by Jepi & KHz</p>
+                 <div class="services__btn"><button>Listen</button></div>
+             </div>
+
+             <div class="services__card">
+                 <h2>MOZART</h2>
+                 <p>Produced by Jepi & KHz</p>
+                 <div class="services__btn"><button>Listen</button></div>
+             </div>
+         </div>
+     </div>
+
+     <!-- Features Section -->
+     <div class="main" id="sign-up">
+         <div class="main__container">
+             <div class="main__content">
+                 <h1>Join Our Team</h1>
+                 <h2>Sign Up </h2>
+                 <p>See what makes us different</p>
+                 <button class="main__btn"><a href="#">Contact</a></button>
+             </div>
+             <div class="main__img--container">
+                 <div class="main__img--card" id="card-2"><i class="fas fa-users"></i></div>
+             </div>
+
+         </div>
+     </div>
+
+    <!-- Footer__container -->
+     <div class="footer__container">
+         <div class="footer__links">
+             <div class="footer__link--wrapper">
+                 <div class="footer__link--items">
+                     <h2>About Us</h2>
+                     <a href="/">How it works</a>
+                     <a href="/">Testimonials</a>
+                     <a href="/">Careers</a>
+                     <a href="/">Terms of Service</a>
+                 </div>
+                 <div class="footer__link--items">
+                     <h2>Contact Us</h2>
+                     <a href="/">+45 24 24 24 24</a>
+                     <a href="/">Support</a>
+                     <a href="/">Location</a>
+                     <a href="/">Destinations</a>
+                 </div>
+             </div>
+             <div class="footer__link--wrapper">
+                 <div class="footer__link--items">
+                     <h2>Videos</h2>
+                     <a href="/">Submit Video</a>
+                     <a href="/">Agency</a>
+                     <a href="/">Ambassadors</a>
+                     <a href="/"></a>
+                 </div>
+                 <div class="footer__link--items">
+                     <h2>Social Media</h2>
+                     <a href="/">Twitter</a>
+                     <a href="/">Soundcloud</a>
+                     <a href="/">YouTube</a>
+                     <a href="/">Instagram</a>
+                 </div>
+             </div>
+             </div>
+            <section class="social__media">
+                <div class="social__media--wrap">
+                    <div class="foot__logo">
+                        <a href="/" id="footer__logo">SONTNOS RECORDS</a>
+                    </div>
+                    <p class="website__rights">©SONTNOS RECORDS 2021. All Rights Reserved.</p>
+                    <div class="social__icons">
+                        <a href="https://soundcloud.com/danny9414" class="social__icon--link" target="_blank"><i class="fab fa-soundcloud"></i></a>
+                        <a href="https://www.instagram.com/jepi0312/" class="social__icon--link"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/qo123ka" class="social__icon--link"><i class="fab fa-facebook"></i></a>
+                        <a href="/" class="https://www.youtube.com/channel/UCKGYtv0cewATNNbHtLbHMjg"><i class="fab fa-youtube"></i></a>
+                        <a href="/" class="https://www.linkedin.com/in/daniel-kirchner-0312/"><i class="fab fa-linkedin"></i></a>
+                    </div>c
+                </div>
+            </section>
+         </div>
+     </div>
+
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+     <script src="app.js"></script>
+
+</body>
+</html>
